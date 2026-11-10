@@ -7,7 +7,7 @@ class HealthStatusTests(unittest.TestCase):
     def test_health_contract(self):
         self.assertEqual(
             health_status(),
-            {"service": "demo-service", "status": "ok"},
+            {"service": "demo-service", "status": "ok", "version": "1.0.0"},
         )
 
     def test_responses_are_independent(self):
