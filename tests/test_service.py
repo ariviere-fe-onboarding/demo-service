@@ -1,14 +1,14 @@
 import unittest
 
-from service import request_timeout
+from service import outbound_timeout_seconds
 
 
 class ServiceConfigTests(unittest.TestCase):
     def test_default_timeout(self):
-        self.assertEqual(request_timeout(), 30)
+        self.assertEqual(outbound_timeout_seconds(), 30)
 
     def test_timeout_is_positive(self):
-        self.assertGreater(request_timeout(), 0)
+        self.assertGreater(outbound_timeout_seconds(), 0)
 
 
 if __name__ == "__main__":

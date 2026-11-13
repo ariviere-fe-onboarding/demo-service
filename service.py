@@ -3,6 +3,6 @@
 DEFAULT_TIMEOUT_SECONDS = 30
 
 
-def request_timeout():
+def outbound_timeout_seconds():
     """Return the default outbound request timeout in seconds."""
     return DEFAULT_TIMEOUT_SECONDS
